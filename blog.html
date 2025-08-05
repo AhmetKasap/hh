@@ -38,10 +38,21 @@
                     <a href="iletisim.html" class="text-gray-700 hover:text-primary transition-colors">İletişim</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-700 hover:text-primary">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                    <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">Ana Sayfa</a>
+                    <a href="hakkimda.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">Hakkımda</a>
+                    <a href="servisler.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">Hizmetler</a>
+                    <a href="blog.html" class="block px-3 py-2 text-primary font-semibold">Blog</a>
+                    <a href="iletisim.html" class="block px-3 py-2 text-gray-700 hover:text-primary transition-colors">İletişim</a>
+                </div>
+            </div>
             </div>
         </div>
     </nav>
@@ -111,7 +122,7 @@
                                                 <span class="text-gray-500 text-sm">8 yorum</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
+                                        <a href="blog-detay.html" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +156,7 @@
                                                 <span class="text-gray-500 text-sm">15 yorum</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
+                                        <a href="blog-detay.html" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +190,7 @@
                                                 <span class="text-gray-500 text-sm">5 yorum</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
+                                        <a href="blog-detay.html" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +224,7 @@
                                                 <span class="text-gray-500 text-sm">12 yorum</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
+                                        <a href="blog-detay.html" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +258,7 @@
                                                 <span class="text-gray-500 text-sm">23 yorum</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
+                                        <a href="blog-detay.html" class="text-primary font-semibold hover:underline">Devamını Oku →</a>
                                     </div>
                                 </div>
                             </div>
@@ -426,5 +437,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html> 
